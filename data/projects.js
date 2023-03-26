@@ -3,10 +3,10 @@ export const projects = [
     id: 1,
     title: "UniWeightsCalc",
     description:
-      "Back in high school when our national exam results came out, it was time to detemine your fate (Calculate your university cutoff weights for public university admissions).  To me, it was\
-       kinda tedious to manually calculate my weights b'cause sometimes I obtained wrong weights, So I thought of a better way that could help the guys before me, so i decide to give it a try\
-       This calculator basically calculates your cut-off weights (applies to our education system in Uganda) to detemine your fit for a give course you wish to take.(Please read more about this\
-       calculator on the about section of the app). It uses vanilla Javascript to create the algorithm for the calculation.",
+      "UniWeightsCalc is a web app that helps students applying to public Universities particularly in Uganda\
+       to calculate their university cutoff weights to determine some of the available courses they can do. \
+       It uses vanilla Javascript to create the algorithm for the calculation. It also offers a good documentation \
+       on how the Weighting system works on the about page",
     preview_image: "/images/projects/Unicalc.png",
     techStack: [
       {
@@ -15,19 +15,19 @@ export const projects = [
         image: "/images/skill-logos/javascript.png",
       },
     ],
-    github_link: "https://github.com/WabweniBrian/UniWeightCalc",
-    live_demo_link: "https://uni-weight-calc.netlify.app/",
-    video_demo_link: "",
+    github_link: "https://github.com/WabweniBrian/uni-weights-calc",
+    live_demo_link: "https://uni-weights-calc.netlify.app",
+    videoId: "B6_iQvaIjXw",
   },
   {
     id: 2,
     title: "Jobit",
     description:
-      "Back in high school when our national exam results came out, it was time to detemine your fate (Calculate your university cutoff weights for public university admissions).  To me, it was\
-       kinda tedious to manually calculate my weights b'cause sometimes I obtained wrong weights, So I thought of a better way that could help the guys before me, so i decide to give it a try\
-       This calculator basically calculates your cut-off weights (applies to our education system in Uganda) to detemine your fit for a give course you wish to take.(Please read more about this\
-       calculator on the about section of the app). It uses vanilla Javascript to create the algorithm for the calculation.",
-    preview_image: "/images/projects/jobit.png",
+      "Jobit is a job search app that allows you to easily search for jobs. It also lists available talent, \
+      companies and meetups/events. The great feature of this app is the multi-filter job search and auto-complete that allows\
+       one to easily filter through jobs. I built the first version in pure React.js with a custom node.js/express\
+        api and later built the same with Next.js and Tailwind css still with custom jobs api",
+    preview_image: "/images/projects/Jobit.png",
     techStack: [
       {
         id: "t1",
@@ -37,7 +37,7 @@ export const projects = [
       {
         id: "t2",
         title: "Next.js",
-        image: "/images/skill-logos/react.png",
+        image: "/images/skill-logos/next.png",
       },
       {
         id: "t3",
@@ -45,18 +45,17 @@ export const projects = [
         image: "/images/skill-logos/tailwind.png",
       },
     ],
-    github_link: "https://github.com/WabweniBrian/UniWeightCalc",
+    github_link: "https://github.com/WabweniBrian/jobit-nextjs",
     live_demo_link: "https://uni-weight-calc.netlify.app/",
-    video_demo_link: "",
+    videoId: "B6_iQvaIjXw",
   },
   {
     id: 3,
     title: "Shopmart",
     description:
-      "Back in high school when our national exam results came out, it was time to detemine your fate (Calculate your university cutoff weights for public university admissions).  To me, it was\
-       kinda tedious to manually calculate my weights b'cause sometimes I obtained wrong weights, So I thought of a better way that could help the guys before me, so i decide to give it a try\
-       This calculator basically calculates your cut-off weights (applies to our education system in Uganda) to detemine your fit for a give course you wish to take.(Please read more about this\
-       calculator on the about section of the app). It uses vanilla Javascript to create the algorithm for the calculation.",
+      "Shopmart is an e-commerce dashboard that allows you to manage your products, sales, customers and more.\
+       It is built with React.js and Material UI. It offers a very clean and intuitive user interface that allows\
+        you to perform all your tasks very easily. You can check out some of the similar projects shown by thumbnails below.",
     preview_image: "/images/projects/Shopmart.png",
     techStack: [
       {
@@ -67,51 +66,60 @@ export const projects = [
       {
         id: "t2",
         title: "Material UI",
-        image: "/images/skill-logos/javascript.png",
+        image: "/images/skill-logos/material-ui.png",
       },
     ],
-    github_link: "https://github.com/WabweniBrian/UniWeightCalc",
-    live_demo_link: "https://uni-weight-calc.netlify.app/",
-    video_demo_link: "",
+    github_link: "https://github.com/WabweniBrian/shopmart",
+    live_demo_link: "https://shopmart-dashboard.netlify.app",
+    videoId: "B6_iQvaIjXw",
   },
   {
     id: 4,
     title: "Martvilla",
     description:
-      "Back in high school when our national exam results came out, it was time to detemine your fate (Calculate your university cutoff weights for public university admissions).  To me, it was\
-       kinda tedious to manually calculate my weights b'cause sometimes I obtained wrong weights, So I thought of a better way that could help the guys before me, so i decide to give it a try\
-       This calculator basically calculates your cut-off weights (applies to our education system in Uganda) to detemine your fit for a give course you wish to take.(Please read more about this\
-       calculator on the about section of the app). It uses vanilla Javascript to create the algorithm for the calculation.",
+      "Martvilla is a property listings websites that showcases properties such as villas, apartments, houses, etc.\
+      I literally just translated some design screenshots into this beautiful responsive website.\
+       It offers different layouts for different pages.\
+       It has over 20+ pages for home, blog, about us, property, team etc.",
     preview_image: "/images/projects/Martvilla.png",
     techStack: [
       {
         id: "t1",
-        title: "Vanilla Javascript",
-        image: "/images/skill-logos/javascript.png",
+        title: "React.js",
+        image: "/images/skill-logos/react.png",
+      },
+      {
+        id: "t2",
+        title: "Tailwind CSS",
+        image: "/images/skill-logos/tailwind.png",
       },
     ],
-    github_link: "https://github.com/WabweniBrian/UniWeightCalc",
+    github_link: "https://github.com/WabweniBrian/mart-villa",
     live_demo_link: "https://uni-weight-calc.netlify.app/",
-    video_demo_link: "",
+    videoId: "B6_iQvaIjXw",
   },
   {
     id: 5,
     title: "TripGuide",
     description:
-      "Back in high school when our national exam results came out, it was time to detemine your fate (Calculate your university cutoff weights for public university admissions).  To me, it was\
-       kinda tedious to manually calculate my weights b'cause sometimes I obtained wrong weights, So I thought of a better way that could help the guys before me, so i decide to give it a try\
-       This calculator basically calculates your cut-off weights (applies to our education system in Uganda) to detemine your fit for a give course you wish to take.(Please read more about this\
-       calculator on the about section of the app). It uses vanilla JavaScript to create the algorithm for the calculation.",
+      "TripGuide is a travel guide website that allows you to book hotels, rent cars and book planes for your trip etc.\
+      Thanks to UIHUNT for the design screenshots that i downloaded and translated into this stunning responsive web app.\
+      It has over 15+ pages such as hotel search, hotel details, car search, car details, flight search, flight details, profile, bookings etc.",
     preview_image: "/images/projects/TripGuide.png",
     techStack: [
       {
         id: "t1",
-        title: "Vanilla JavaScript",
-        image: "/images/skill-logos/javascript.png",
+        title: "React.js",
+        image: "/images/skill-logos/react.png",
+      },
+      {
+        id: "t2",
+        title: "Tailwind CSS",
+        image: "/images/skill-logos/tailwind.png",
       },
     ],
-    github_link: "https://github.com/WabweniBrian/UniWeightCalc",
-    live_demo_link: "https://uni-weight-calc.netlify.app/",
-    video_demo_link: "",
+    github_link: "https://github.com/WabweniBrian/trip-guide",
+    live_demo_link: "https://brian-trip-guide.netlify.app/",
+    videoId: "B6_iQvaIjXw",
   },
 ];

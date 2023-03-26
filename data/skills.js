@@ -44,9 +44,9 @@ export const skills = [
     name: "Adobe Xd",
     image: "/images/skill-logos/adobe-xd.png",
   },
-  //   {
-  //     id: 10,
-  //     name: "Next.js",
-  //     image: "/images/skill-logos/adobe-xd.png",
-  //   },
+  {
+    id: 10,
+    name: "Next.js",
+    image: "/images/skill-logos/next.png",
+  },
 ];

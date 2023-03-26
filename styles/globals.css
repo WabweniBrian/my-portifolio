@@ -25,11 +25,15 @@ body {
 }
 
 a {
-  @apply transition-all text-inherit hover:text-primary cursor-default sm:cursor-pointer;
+  @apply transition-all cursor-default text-inherit hover:text-primary sm:cursor-pointer;
+}
+
+p {
+  @apply !leading-7;
 }
 
 .navbar.scrolled {
-  @apply bg-secondary/80 shadow backdrop-blur-sm;
+  @apply shadow bg-secondary/80 backdrop-blur-sm;
   animation: scroll 0.3s ease-in-out;
 }
 
@@ -106,12 +110,12 @@ p {
 }
 
 .skill:nth-child(even) {
-  @apply float-right clear-left -ml-8 sm:-ml-4;
+  @apply float-right -ml-8 clear-left sm:-ml-4;
 }
 
 /* Adds the hand icon pointing to the hobby */
 .skill {
-  @apply relative before:absolute before:w-3  before:h-3 before:bg-hover-bg before:rounded-full;
+  @apply relative before:absolute before:w-3 before:h-3 before:bg-hover-bg before:rounded-full;
 }
 
 .skill:nth-child(odd)::before {
@@ -123,4 +127,9 @@ p {
 
 .test-color {
   color: #20302d;
+}
+
+.more img:hover {
+  transform: scale(5);
+  transition: all 0.3s ease-in-out;
 }
