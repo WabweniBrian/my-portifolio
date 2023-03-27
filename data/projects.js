@@ -95,7 +95,7 @@ export const projects = [
     ],
     github_link: "https://github.com/WabweniBrian/trip-guide",
     live_demo_link: "https://brian-trip-guide.netlify.app/",
-    videoId: "z3-YCkPHumU",
+    videoId: "3Zzrh6cffiQ",
   },
   {
     id: 5,
@@ -120,6 +120,6 @@ export const projects = [
     ],
     github_link: "https://github.com/WabweniBrian/mart-villa",
     live_demo_link: "https://uni-weight-calc.netlify.app/",
-    videoId: "z3-YCkPHumU",
+    videoId: "wcXIZpnMUms",
   },
 ];
