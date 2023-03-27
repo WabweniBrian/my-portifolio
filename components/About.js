@@ -14,9 +14,9 @@ const About = () => {
       <div className="flex-wrap gap-6 mt-16 text-center flex-center-center sm:text-left">
         <div className="image flex-1 basis-[18rem]">
           <img
-            src="/images/about-banner.png"
+            src="/images/about.png"
             alt="About Me Image"
-            className="w-full"
+            className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full object-cover object-top mx-auto"
           />
         </div>
         <div className="image flex-1 basis-[18rem]">
