@@ -17,7 +17,7 @@ export const projects = [
     ],
     github_link: "https://github.com/WabweniBrian/uni-weights-calc",
     live_demo_link: "https://uni-weights-calc.netlify.app",
-    videoId: "B6_iQvaIjXw",
+    videoId: "z3-YCkPHumU",
   },
   {
     id: 2,
@@ -46,8 +46,8 @@ export const projects = [
       },
     ],
     github_link: "https://github.com/WabweniBrian/jobit-nextjs",
-    live_demo_link: "https://uni-weight-calc.netlify.app/",
-    videoId: "B6_iQvaIjXw",
+    live_demo_link: "https://jobit-bri.vercel.app/",
+    videoId: "BbxFPgvwdBY",
   },
   {
     id: 3,
@@ -71,10 +71,34 @@ export const projects = [
     ],
     github_link: "https://github.com/WabweniBrian/shopmart",
     live_demo_link: "https://shopmart-dashboard.netlify.app",
-    videoId: "B6_iQvaIjXw",
+    videoId: "EKoSmEjNG_k",
   },
   {
     id: 4,
+    title: "TripGuide",
+    description:
+      "TripGuide is a travel guide website that allows you to book hotels, rent cars and book planes for your trip etc.\
+      Thanks to UIHUNT for the design screenshots that i downloaded and translated into this stunning responsive web app.\
+      It has over 15+ pages such as hotel search, hotel details, car search, car details, flight search, flight details, profile, bookings etc.",
+    preview_image: "/images/projects/TripGuide.png",
+    techStack: [
+      {
+        id: "t1",
+        title: "React.js",
+        image: "/images/skill-logos/react.png",
+      },
+      {
+        id: "t2",
+        title: "Tailwind CSS",
+        image: "/images/skill-logos/tailwind.png",
+      },
+    ],
+    github_link: "https://github.com/WabweniBrian/trip-guide",
+    live_demo_link: "https://brian-trip-guide.netlify.app/",
+    videoId: "z3-YCkPHumU",
+  },
+  {
+    id: 5,
     title: "Martvilla",
     description:
       "Martvilla is a property listings websites that showcases properties such as villas, apartments, houses, etc.\
@@ -96,30 +120,6 @@ export const projects = [
     ],
     github_link: "https://github.com/WabweniBrian/mart-villa",
     live_demo_link: "https://uni-weight-calc.netlify.app/",
-    videoId: "B6_iQvaIjXw",
-  },
-  {
-    id: 5,
-    title: "TripGuide",
-    description:
-      "TripGuide is a travel guide website that allows you to book hotels, rent cars and book planes for your trip etc.\
-      Thanks to UIHUNT for the design screenshots that i downloaded and translated into this stunning responsive web app.\
-      It has over 15+ pages such as hotel search, hotel details, car search, car details, flight search, flight details, profile, bookings etc.",
-    preview_image: "/images/projects/TripGuide.png",
-    techStack: [
-      {
-        id: "t1",
-        title: "React.js",
-        image: "/images/skill-logos/react.png",
-      },
-      {
-        id: "t2",
-        title: "Tailwind CSS",
-        image: "/images/skill-logos/tailwind.png",
-      },
-    ],
-    github_link: "https://github.com/WabweniBrian/trip-guide",
-    live_demo_link: "https://brian-trip-guide.netlify.app/",
-    videoId: "B6_iQvaIjXw",
+    videoId: "z3-YCkPHumU",
   },
 ];

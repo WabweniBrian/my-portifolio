@@ -29,7 +29,12 @@ const Projects = () => {
         </div>
       </div>
       <p className="mt-2 text-2xl text-center">These are some of my projects</p>
-
+      <p className="mt-2 text-center">
+        Since most of these apps/websites have multiple pages, I have included{" "}
+        <br />
+        video demos for each project. They showcase most features and <br />
+        responsiveness of the website/web app
+      </p>
       <YoutubePlayer modal={modal} closeModal={closeModal} />
       <div className="mt-5">
         {projects.map(
