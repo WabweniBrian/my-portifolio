@@ -7,7 +7,7 @@ const YoutubePlayer = ({ modal, closeModal }) => {
   };
   return (
     modal.isOpen && (
-      <div className="fixed top-0 left-0 w-full h-full flex-center-center bg-black/50 z-[999]">
+      <div className="fixed top-0 left-0 w-full h-full flex-center-center bg-black/50 z-[99999]">
         <div className="absolute top-4 right-4" onClick={closeModal}>
           <FaTimes className="text-4xl opacity-70 sm:cursor-pointer" />
         </div>
