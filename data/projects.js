@@ -27,7 +27,7 @@ export const projects = [
        like Spotify. Some of them are; creating playlists, great UI/UX, adding songs to playlists and favorites,\
         etc. It uses spotify authenticatiion to handle the login and spotify api to pull in songs. Another great feature\
          is searching for songs and artists and a draggable and minimizable player",
-    preview_image: "/images/projects/spotify.png",
+    preview_image: "/images/projects/Spotify.png",
     techStack: [
       {
         id: "t1",

@@ -27,7 +27,7 @@ export const skills = [
   {
     id: 6,
     name: "JavaScript",
-    image: "/images/skill-logos/javaScript.png",
+    image: "/images/skill-logos/javascript.png",
   },
   {
     id: 7,
