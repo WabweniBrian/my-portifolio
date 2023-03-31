@@ -14,7 +14,7 @@ const Navbar = ({ slideNavbar }) => {
 
   return (
     <nav
-      className={`navbar fixed  w-full top-0 left-0 z-[99] py-[0.4rem] bg-main-bg/80 backdrop-blur-sm ${
+      className={`navbar fixed  w-full top-0 left-0 z-[9999] py-[0.4rem] bg-main-bg/80 backdrop-blur-sm ${
         slideNavbar && "scrolled"
       }`}
     >
