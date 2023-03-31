@@ -21,6 +21,31 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Advanced Spotify clone",
+    description:
+      "You want to listen to some music, then this app is for you. This clone has most features just\
+       like Spotify. Some of them are; creating playlists, great UI/UX, adding songs to playlists and favorites,\
+        etc. It uses spotify authenticatiion to handle the login and spotify api to pull in songs. Another great feature\
+         is searching for songs and artists and a draggable and minimizable player",
+    preview_image: "/images/projects/spotify.png",
+    techStack: [
+      {
+        id: "t1",
+        title: "React.js",
+        image: "/images/skill-logos/react.png",
+      },
+      {
+        id: "t2",
+        title: "Tailwind CSS",
+        image: "/images/skill-logos/tailwind.png",
+      },
+    ],
+    github_link: "https://github.com/WabweniBrian/uni-weights-calc",
+    live_demo_link: "https://uni-weights-calc.netlify.app",
+    videoId: "z3-YCkPHumU",
+  },
+  {
+    id: 3,
     title: "Jobit",
     description:
       "Jobit is a job search app that allows you to easily search for jobs. It also lists available talent, \
@@ -50,7 +75,7 @@ export const projects = [
     videoId: "BbxFPgvwdBY",
   },
   {
-    id: 3,
+    id: 4,
     title: "Shopmart",
     description:
       "Shopmart is an e-commerce dashboard that allows you to manage your products, sales, customers and more.\
@@ -74,7 +99,7 @@ export const projects = [
     videoId: "EKoSmEjNG_k",
   },
   {
-    id: 4,
+    id: 5,
     title: "TripGuide",
     description:
       "TripGuide is a travel guide website that allows you to book hotels, rent cars and book planes for your trip etc.\
@@ -98,7 +123,7 @@ export const projects = [
     videoId: "3Zzrh6cffiQ",
   },
   {
-    id: 5,
+    id: 6,
     title: "Martvilla",
     description:
       "Martvilla is a property listings websites that showcases properties such as villas, apartments, houses, etc.\
