@@ -144,7 +144,7 @@ export const projects = [
       },
     ],
     github_link: "https://github.com/WabweniBrian/mart-villa",
-    live_demo_link: "https://uni-weight-calc.netlify.app/",
+    live_demo_link: "https://mart-villa-brian.netlify.app/",
     videoId: "wcXIZpnMUms",
   },
 ];
