@@ -33,6 +33,17 @@ const Hero = () => {
             I craft every pixel inch to its right position 😎
           </span>
         </p>
+        <div className="mt-4">
+          <a
+            href="/Wabweni_Brian_Resume.pdf"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className="bg-gradient-to-r from-yellow-600 to-primary px-6 py-3 !text-white"
+            download
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
       <div className="flex-1 basis-[25rem]">
         <img src="/images/hero-img.png" alt="Hero-Image" className="w-full" />
