@@ -21,7 +21,9 @@ const Hero = () => {
         </h1>
         <div className="flex justify-end">
           <div className="gradient-tag">
-            <span className="text-muted text-xl">A Frontend Developer</span>
+            <span className="text-muted text-xl">
+              A Frontend Developer | UI/UX Designer
+            </span>
           </div>
         </div>
         <p className="mt-4">

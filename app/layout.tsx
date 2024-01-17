@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Wabweni Brian",
   keywords: "wabweni brian",
   description:
-    "I create visually stunning and dynamic web applications and websites. I also translate any design into clean code using the latest tech stack",
+    "I'm a motivated and passionate frontend developer and UI/UX designer with skills in creating visually stunning user interface. ",
 };
 
 export default function RootLayout({
