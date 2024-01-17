@@ -1,6 +1,6 @@
 type Techstack = {
   id: string;
-  title: string;
+  name: string;
   image: string;
 };
 

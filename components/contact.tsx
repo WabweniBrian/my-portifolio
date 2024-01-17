@@ -33,8 +33,7 @@ const Contact = () => {
               <h1 className="text-base">Phone:</h1>
               <p>
                 (+256) 775 358738 <br />
-                (+256) 758 548836 <br />
-                (+256) 752 870867 (WhatsApp)
+                (+256) 758 548836 (WhatsApp)
               </p>
             </div>
           </div>

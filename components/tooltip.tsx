@@ -34,7 +34,7 @@ const Tooltip = ({ position, content, hidden }: TooltipProps) => {
         hidden && "md:!hidden"
       }  !text-white  absolute z-[999] px-4 py-[3px] rounded bg-hover-bg before:absolute before:w-[0.65rem] before:h-[0.65rem] before:bg-hover-bg before:rotate-45 hidden group-hover:flex-center-center ${getPostion()}`}
     >
-      <span className="flex-shrink-0 capitalize"> {content}</span>
+      <span className="flex-shrink-0"> {content}</span>
     </div>
   );
 };

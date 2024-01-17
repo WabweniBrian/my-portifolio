@@ -15,16 +15,25 @@ const getProjects = async () => {
   return res.json();
 };
 
+const getTechstacks = async () => {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/projects/techstacks`,
+    { cache: "no-store" }
+  );
+  return res.json();
+};
+
 export default async function Home() {
   const projects: Project[] = await getProjects();
-  console.log(projects);
+  const techstacks: Techstack[] = await getTechstacks();
+
   return (
     <>
       <LinkDots />
       <SocialIcons />
       <Hero />
       <About />
-      <Skills />
+      <Skills skills={techstacks} />
       <Projects projects={projects} />
       <Contact />
       <Footer />

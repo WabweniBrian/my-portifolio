@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { skills } from "../data/skills";
 
-const Skills = () => {
+const Skills = ({ skills }: { skills: Techstack[] }) => {
   return (
     <section
       className="pt-10 pb-28 min-h-screen !bg-cover !bg-no-repeat relative"
@@ -36,7 +35,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-main-bg to-transparent" />
+      <div className="absolute bottom-0 w-full h-[20%] bg-gradient-to-t from-main-bg to-transparent" />
     </section>
   );
 };

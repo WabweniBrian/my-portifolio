@@ -20,10 +20,10 @@ const ProjectDetails = ({ project, openModal }: ProjectDetailsProps) => {
             <div className="relative group" key={stack.id}>
               <img
                 src={stack.image}
-                alt={stack.title}
+                alt={stack.name}
                 className="w-6 rounded-md sm:cursor-pointer"
               />
-              <Tooltip content={stack.title} />
+              <Tooltip content={stack.name || ""} />
             </div>
           );
         })}
