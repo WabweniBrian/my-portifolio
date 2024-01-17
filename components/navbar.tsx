@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 import { navbarLinks } from "../data/navbar-link";
@@ -10,13 +10,15 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [slideNavbar, setSlideNavbar] = useState(false);
 
-  window.addEventListener("scroll", () => {
-    window.scrollY > 0 ? setSlideNavbar(true) : setSlideNavbar(false);
-  });
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 0 ? setSlideNavbar(true) : setSlideNavbar(false);
+    });
+  }, []);
 
   return (
     <nav

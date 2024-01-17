@@ -11,7 +11,6 @@ import SocialIcons from "@/components/social-icons";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <LinkDots />
       <SocialIcons />
       <Hero />
