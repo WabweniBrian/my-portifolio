@@ -1,27 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/*---------------------------------------------- General styles------------------------------------------------ */
+html {
+  @apply scroll-smooth;
+  scroll-padding-top: 4rem;
+}
+*::-webkit-scrollbar {
+  @apply h-[5px] w-[5px];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-[#619385];
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-transparent;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply font-questrial bg-main-bg text-text-color;
+}
+
+a {
+  @apply transition-all cursor-default text-inherit hover:text-primary sm:cursor-pointer;
+}
+
+p {
+  @apply !leading-7;
+}
+
+.navbar.scrolled {
+  @apply shadow bg-secondary/80 backdrop-blur-sm;
+  animation: scroll 0.3s ease-in-out;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #0bab7c, #fcb009);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Back to top button */
+.back-to-top-btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-to-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-link {
+  @apply py-2;
+}
+
+.nav-link a {
+  @apply hover:!text-primary relative before:absolute before:w-full before:h-[2px] before:bg-primary before:-bottom-1 before:left-0 before:scale-0 hover:before:scale-100 before:transition-all before:duration-300;
+}
+
+.nav-link a.active {
+  @apply before:!scale-100 !text-primary;
+}
+
+.dots a.active .dot {
+  @apply !bg-primary shadow-md shadow-primary;
+}
+
+h1 {
+  @apply capitalize;
+}
+
+p {
+  @apply opacity-70;
+}
+
+.showMenu {
+  @apply max-h-[100vh] p-4;
+}
+
+.gradient-tag {
+  @apply bg-gradient-to-tr from-primary to-[#fcb009] px-5 py-2 rounded-lg w-fit relative before:absolute before:bg-secondary before:w-[95%] before:h-[95%] before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-lg;
+}
+
+/* ------------------Skills section------------------ */
+.skill:nth-child(odd) {
+  @apply float-left clear-right mr-52 sm:mr-48;
+}
+
+.skill:nth-child(even) {
+  @apply float-right -ml-8 clear-left sm:-ml-4;
+}
+
+/* Adds the hand icon pointing to the hobby */
+.skill {
+  @apply relative before:absolute before:w-3 before:h-3 before:bg-hover-bg before:rounded-full;
+}
+
+.skill:nth-child(odd)::before {
+  @apply left-full ml-[2px] sm:ml-[4px];
+}
+.skill:nth-child(even)::before {
+  @apply right-full mr-[2px] sm:mr-[4px];
+}
+
+.test-color {
+  color: #20302d;
+}
+
+.more img:hover {
+  transform: scale(5);
+  transition: all 0.3s ease-in-out;
 }
