@@ -3,11 +3,10 @@
 "use client";
 
 import { useState } from "react";
-import { projects } from "../data/projects";
 import YoutubePlayer from "./youtube-palyer";
 import ProjectDetails from "./project-details";
 
-const Projects = () => {
+const Projects = ({ projects }: { projects: Project[] }) => {
   const [modal, setModal] = useState({ isOpen: false, videoId: "" });
 
   const openModal = (videoId: string) => {
@@ -42,18 +41,11 @@ const Projects = () => {
       <div className="mt-5">
         {projects.map((project, i) => (
           <div key={project.id} className="my-52 relative">
-            {project.id === 2 && (
-              <div className="absolute w-full h-full top-0 left-0 bg-main-bg/50 backdrop-blur-[1px] z-[99] flex-center-center">
-                <h1 className="text-6xl font-bold text-primary">
-                  Coming soon..
-                </h1>
-              </div>
-            )}
             {i % 2 === 0 ? (
               <div className="flex-wrap gap-20 flex-center-center">
                 <div className="flex-1 basis-[18rem] relative">
                   <img
-                    src={project.preview_image}
+                    src={project.previewImage}
                     alt={project.title}
                     className="w-full"
                   />
@@ -68,41 +60,11 @@ const Projects = () => {
                 <ProjectDetails project={project} openModal={openModal} />
                 <div className="flex-1 basis-[18rem] relative">
                   <img
-                    src={project.preview_image}
+                    src={project.previewImage}
                     alt={project.title}
                     className="w-full"
                   />
-                  {project.id === 4 && (
-                    <>
-                      <p className="mt-3 text-2xl font-semibold text-center text-[#fcb009]">
-                        Check out more like the above:
-                      </p>
-                      <div className="gap-6 mt-3 flex-center-center more">
-                        <a
-                          href="https://car-management-dashboard.netlify.app/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <img
-                            src="/images/projects/motiv.png"
-                            alt=""
-                            className="object-contain w-20 h-20 rounded"
-                          />
-                        </a>
-                        <a
-                          href="https://money-ex.netlify.app/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <img
-                            src="/images/projects/money.png"
-                            alt=""
-                            className="object-contain w-20 h-20 rounded"
-                          />
-                        </a>
-                      </div>
-                    </>
-                  )}
+
                   <h1 className="absolute right-0 text-9xl opacity-20 text-primary font-poppins -top-24 -z-10">
                     0{i + 1}
                   </h1>

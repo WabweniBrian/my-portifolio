@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import { FiChevronsDown } from "react-icons/fi";
-import Tooltip from "./tooltip";
 import ScrollIcon from "./scroll-icon";
 const Hero = () => {
   return (

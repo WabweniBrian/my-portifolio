@@ -30,7 +30,7 @@ const Tooltip = ({ position, content, hidden }: TooltipProps) => {
 
   return (
     <div
-      className={` text-sm  w-fit ${content.length > 8 && "!w-[120px]"} ${
+      className={` text-sm whitespace-nowrap ${
         hidden && "md:!hidden"
       }  !text-white  absolute z-[999] px-4 py-[3px] rounded bg-hover-bg before:absolute before:w-[0.65rem] before:h-[0.65rem] before:bg-hover-bg before:rotate-45 hidden group-hover:flex-center-center ${getPostion()}`}
     >

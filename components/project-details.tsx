@@ -3,21 +3,6 @@ import React from "react";
 import Tooltip from "./tooltip";
 import { FaGithub, FaDesktop, FaPlay } from "react-icons/fa";
 
-type Techstack = {
-  id: string;
-  title: string;
-  image: string;
-};
-
-type Project = {
-  title: string;
-  description: string;
-  techstacks: Techstack[];
-  github_link: string;
-  live_demo_link: string;
-  videoId: string;
-};
-
 interface ProjectDetailsProps {
   project: Project;
   openModal: (videoId: string) => void;
@@ -45,7 +30,7 @@ const ProjectDetails = ({ project, openModal }: ProjectDetailsProps) => {
       </div>
       <div className="gap-3 mt-4 flex-center-between">
         <a
-          href={project.github_link}
+          href={project.githubUrl}
           target="_blank"
           className="gap-2 px-4 py-2 bg-black rounded-md hover:bg-black/70 flex-align-center hover:text-inherit"
           rel="noreferrer"
@@ -54,7 +39,7 @@ const ProjectDetails = ({ project, openModal }: ProjectDetailsProps) => {
           <span>Source code</span>
         </a>
         <a
-          href={project.live_demo_link}
+          href={project.demoUrl}
           target="_blank"
           className="gap-2 px-4 py-2 rounded-md bg-primary hover:bg-primary/70 flex-align-center hover:text-inherit"
           rel="noreferrer"
