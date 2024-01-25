@@ -6,9 +6,10 @@ import { FaGithub, FaDesktop, FaPlay } from "react-icons/fa";
 interface ProjectDetailsProps {
   project: Project;
   openModal: (videoId: string) => void;
+  index: number;
 }
 
-const ProjectDetails = ({ project, openModal }: ProjectDetailsProps) => {
+const ProjectDetails = ({ project, openModal, index }: ProjectDetailsProps) => {
   return (
     <div className="flex-1 basis-[18rem] order-2 md:order-none">
       <h1 className="text-3xl font-semibold text-gradient">{project.title}</h1>
@@ -32,7 +33,8 @@ const ProjectDetails = ({ project, openModal }: ProjectDetailsProps) => {
         <a
           href={project.githubUrl}
           target="_blank"
-          className="gap-2 px-4 py-2 bg-black rounded-md hover:bg-black/70 flex-align-center hover:text-inherit"
+          className={`gap-2 px-4 py-2 bg-black rounded-md hover:bg-black/70 flex-align-center hover:text-inherit
+        ${index < 2 ? " !hidden" : ""}`}
           rel="noreferrer"
         >
           <FaGithub className="hidden sm:block" />
@@ -41,7 +43,9 @@ const ProjectDetails = ({ project, openModal }: ProjectDetailsProps) => {
         <a
           href={project.demoUrl}
           target="_blank"
-          className="gap-2 px-4 py-2 rounded-md bg-primary hover:bg-primary/70 flex-align-center hover:text-inherit"
+          className={`gap-2 px-4 py-2 rounded-md bg-primary hover:bg-primary/70 flex-align-center hover:text-inherit ${
+            index === 1 ? "!hidden" : ""
+          }`}
           rel="noreferrer"
         >
           <FaDesktop className="hidden sm:block" />

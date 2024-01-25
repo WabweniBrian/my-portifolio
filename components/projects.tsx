@@ -53,11 +53,11 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                     0{i + 1}
                   </h1>
                 </div>
-                <ProjectDetails project={project} openModal={openModal} />
+                <ProjectDetails project={project} openModal={openModal} index={i} />
               </div>
             ) : (
               <div className="flex-wrap gap-20 flex-center-center">
-                <ProjectDetails project={project} openModal={openModal} />
+                <ProjectDetails project={project} openModal={openModal} index={i} />
                 <div className="flex-1 basis-[18rem] relative">
                   <img
                     src={project.previewImage}
