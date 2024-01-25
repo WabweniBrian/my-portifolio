@@ -34,7 +34,7 @@ const ProjectDetails = ({ project, openModal, index }: ProjectDetailsProps) => {
           href={project.githubUrl}
           target="_blank"
           className={`gap-2 px-4 py-2 bg-black rounded-md hover:bg-black/70 flex-align-center hover:text-inherit
-        ${index < 2 ? " !hidden" : ""}`}
+        ${index === 1 || index === 2 ? " !hidden" : ""}`}
           rel="noreferrer"
         >
           <FaGithub className="hidden sm:block" />
